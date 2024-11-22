@@ -24,3 +24,17 @@ def calculate_circle_area(radius):
     if radius < 0:
         raise ValueError("Radius must be non-negative.")
     return math.pi * radius ** 2
+
+def calculate_triangle_area(base, height):
+    """
+    Calculate the area of a triangle.
+
+    :param base: The base of the triangle (must be non-negative).
+    :param height: The height of the triangle (must be non-negative).
+    :return: Area of the triangle.
+    :raises ValueError: If base or height is negative.
+    """
+    if base < 0 or height < 0:
+        raise ValueError("Base and height must be non-negative.")
+    return 0.5 * base * height
+
